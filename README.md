@@ -262,3 +262,26 @@ export default {
   }))
 };
 ```
+
+### custom studio styles
+``` javascript
+path: /variableOverrides.css
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+:root {
+  /* Brand colors */
+  --brand-primary: #d43737;
+  --brand-primary--inverted: #ffffff;
+  --brand-secondary: #0a0a0a;
+  --brand-tertiary: #17223b;
+  /* Typography */
+  --font-family-sans-serif: 'Noto Sans';
+  --font-family-serif: 'Noto Sans';
+  --font-size-base: 15px;
+  --text-color: var(--brand-secondary);
+  /* Main Navigation */
+  --main-navigation-color: var(--brand-tertiary);
+  --main-navigation-color--inverted: var(--brand-primary--inverted);
+}
+```
